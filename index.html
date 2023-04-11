@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <title>Favorite Game Website</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Favorite Game: Chess</h1>
+            <p>Discover the fascinating world of chess</p>
+            <nav>
+                <a href="info.html">Info</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h2>Welcome to the Chess World</h2>
+            <p>Chess is a two-player strategy board game played on a checkered board with 64 squares arranged in an 8x8 grid. The game is played by millions of people worldwide.</p>
+            <img src="chess basic.jpg" alt="Chess board">
+        </section>
+
+        <section class="video-section">
+            <h2>Learn Chess Basics</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NAIQyoPcjNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="newsletter">
+            <h2>Join our Newsletter</h2>
+            <form action="https://httpbin.org/post" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="hidden" name="author" value="LESVINE JOSEPH POOVAKULATH">
+                <button type="submit">Join</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

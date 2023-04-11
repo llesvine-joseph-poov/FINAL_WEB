@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <title>Chess Reviews</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Favorite Game: Chess</h1>
+            <p>Discover the fascinating world of chess</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="info.html">Info</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <body class="reviews-page">
+        <section class="reviews">
+            <h2>Player Review</h2>
+            <div id="reviews-container">
+                <!-- Reviews will be added here dynamically by JavaScript -->
+            </div>
+        </section>
+
+        <section class="add-review">
+            <h2>Add Your Review</h2>
+            <form id="review-form">
+                <label for="reviewer-name">Name:</label>
+                <input type="text" id="reviewer-name" required>
+                <br>
+                <label for="review-date">Date:</label>
+                <input type="date" id="review-date" required>
+                <br>
+                <label for="review-rating">Rating:</label>
+                <input type="number" id="review-rating" min="1" max="5" required>
+                <br>
+                <label for="review-text">Your Review:</label>
+                <textarea id="review-text" rows="4" required></textarea>
+                <br>
+                <button type="submit">Create</button>
+            </form>
+        </section>
+    </body>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="reviews.js"></script>
+</body>
+</html>
